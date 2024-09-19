@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: darkslategray; /* Dark slate gray background */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    margin-right: 100px; /* Space between the image and the container */
+}
+
+.image-container img {
+    width: 450px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: to round the image corners */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-right: 22%;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 2;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#task-time {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px; /* Reduced gap between buttons */
+    justify-content: flex-end; /* Move buttons to the right */
+}
+
+.task-buttons button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.task-buttons .edit {
+    background-color: #ffc107;
+    color: white;
+    border-radius: 5px;
+}
+
+.task-buttons .delete {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+}
+
+.task-buttons .complete {
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 5px;
+}
+
+.task-time {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
